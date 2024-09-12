@@ -119,3 +119,14 @@ comment on column student20.t2_payment.payment_date is 'Дата выполне�
 comment on column student20.t2_payment.price is 'Цена';
 comment on column student20.t2_payment.fees is 'Комиссия';
 
+-- В данной структуре используются следующие связи:
+-- Один-ко-многим (многие-к-одному) - t2_book -> t2_author, t2_transaction -> t2_client, t2_payment -> t2_client,
+-- t2_transaction -> t2_book
+-- Один-к-одному - t2_payment -> t2_transaction
+
+-- Все первичные и внешние ключи указаны в описаниях полей таблиц
+
+-- Перечисление родительских таблиц в формате "родительская -> дочерняя":
+-- t2_author -> t2_book, t2_client -> t2_transaction, t2_transaction -> t2_payment, t2_client -> t2_payment,
+-- t2_transaction -> t2_book
+
