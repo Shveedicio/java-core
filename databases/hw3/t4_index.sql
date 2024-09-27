@@ -1,0 +1,1 @@
+create index idx_t1_book_author_id on student20.t1_book(author_id);

@@ -1,0 +1,1 @@
+select count(b) from student20.t1_book b join student20.t1_genre ge on ge.id = b.genre_id and ge.name = 'Исторический роман';
